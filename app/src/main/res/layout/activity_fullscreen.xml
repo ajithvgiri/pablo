@@ -4,6 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
     tools:context=".FullscreenActivity">
+
+
+    <com.ajithvgiri.photoviewerlib.PhotoView
+        android:id="@+id/fullscreen_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

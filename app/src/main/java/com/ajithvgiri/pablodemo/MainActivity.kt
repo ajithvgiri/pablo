@@ -37,7 +37,9 @@ class MainActivity : AppCompatActivity() {
         val pablo = Pablo(this)
         val adapter = ImageAdapter(images, pablo, object : OnClickListener {
             override fun onClicked(imageUrl: String) {
-
+                val intent = Intent(this@MainActivity, FullscreenActivity::class.java)
+                intent.putExtra("image", imageUrl)
+                startActivity(intent)
             }
         })
 
